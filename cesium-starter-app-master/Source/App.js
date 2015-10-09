@@ -1,12 +1,4 @@
-//地理院タイル読み込み
-
-var viewer = new Cesium.Viewer('cesiumContainer', {
-imageryProvider: new Cesium.OpenStreetMapImageryProvider({
-url: 'http://cyberjapandata.gsi.go.jp/xyz/std/',
-credit: new Cesium.Credit('地理院タイル', '', 'http://maps.gsi.go.jp/development/ichiran.html')
-}),
-baseLayerPicker: false
-});
+var viewer = new Cesium.Viewer('cesiumContainer');
 
 
 //視点の変更
@@ -66,10 +58,10 @@ point2.add({
 
 //ラインを追加
 
-var line = viewer.entities;
+var line1 = viewer.entities;
 
 
-line.add({
+line1.add({
 
     name : 'Let's go!',
 
