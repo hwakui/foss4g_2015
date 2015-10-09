@@ -3,7 +3,7 @@ var viewer = new Cesium.Viewer('cesiumContainer');
 
 //視点の変更
 
-viewer.camera.flyTo({ destination : Cesium.Cartesian3.fromDegrees(139.50022, 35.91546, 15000.0)});
+viewer.camera.flyTo({ destination : Cesium.Cartesian3.fromDegrees(139.50022, 35.91546, 30000.0)});
 
 //ポイントを追加
 
@@ -74,6 +74,24 @@ line1.add({
         width : 4,
 
         material : Cesium.Color.RED
+
+    }
+});
+
+var line2 = viewer.entities;
+
+
+line2.add({
+
+    name : 'Pink line on the surface',
+
+    polyline : {
+        positions : Cesium.Cartesian3.fromDegreesArray([138.58719, 36.41000,
+ 138.59053, 36.35607]),
+
+        width : 4,
+
+        material : Cesium.Color.PINK
 
     }
 });
