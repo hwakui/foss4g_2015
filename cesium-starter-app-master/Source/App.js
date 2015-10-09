@@ -55,3 +55,45 @@ point2.add({
         }
     
 });
+
+
+
+//ƒ‰ƒCƒ“‚ð’Ç‰Á
+
+var line1 = viewer.entities;
+
+
+line1.add({
+
+    name : 'Let's go!',
+
+    polyline : {
+
+        positions : Cesium.Cartesian3.fromDegreesArray([139.50022, 35.91546,
+ 138.59053, 36.35607]),
+
+        width : 4,
+
+        material : Cesium.Color.RED
+
+    }
+});
+
+var line2 = viewer.entities;
+
+
+line2.add({
+
+    name : 'Let's go2!',
+
+    polyline : {
+
+        positions : Cesium.Cartesian3.fromDegreesArray([138.58719, 36.41000,
+ 138.59053, 36.35607]),
+
+        width : 4,
+
+        material : Cesium.Color.PINK
+
+    }
+});
