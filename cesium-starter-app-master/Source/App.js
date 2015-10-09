@@ -4,6 +4,7 @@ var viewer = new Cesium.Viewer('cesiumContainer');
 
 var point = viewer.entities;
 
+
 point.add({
 
         position : Cesium.Cartesian3.fromDegrees(-75.59777, 40.03883),
@@ -52,8 +53,6 @@ Polygon.add({
 
         hierarchy : Cesium.Cartesian3.fromDegreesArray([-108.0, 42.0, -100.0, 42.0,
  -104.0, 40.0]),
-
-        extrudedHeight: 500000.0,
 
 	material : Cesium.Color.GREEN
 
