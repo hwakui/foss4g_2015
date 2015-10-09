@@ -1,4 +1,15 @@
-var viewer = new Cesium.Viewer('cesiumContainer');
+//var viewer = new Cesium.Viewer('cesiumContainer');
+
+
+//地理院タイル読み込み
+
+var viewer = new Cesium.Viewer('cesiumContainer', {
+imageryProvider: new Cesium.OpenStreetMapImageryProvider({
+url: 'http://cyberjapandata.gsi.go.jp/xyz/std/',
+credit: new Cesium.Credit('地理院タイル', '', 'http://maps.gsi.go.jp/development/ichiran.html')
+}),
+baseLayerPicker: false
+});
 
 //ポイントを追加
 
@@ -14,6 +25,23 @@ point.add({
             pixelSize : 10,
 
             color : Cesium.Color.YELLOW
+
+        }
+    
+});
+
+var point2 = viewer.entities;
+
+
+point2.add({
+
+        position : Cesium.Cartesian3.fromDegrees(-65.59777, 50.03883),
+
+        point : {
+
+            pixelSize : 20,
+
+            color : Cesium.Color.BLUE
 
         }
     
@@ -65,4 +93,5 @@ Polygon.add({
 
 //視点の変更
 
-viewer.camera.flyTo({ destination : Cesium.Cartesian3.fromDegrees(139.76,35.67, 15000.0)});
+viewer.camera.flyTo({ destination : Cesium.Cartesian3.fromDegrees(139.76, 35.67, 15000.0)});
+
