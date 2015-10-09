@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>kmltest.kml</name>
+	<Style id="sh_police">
+		<IconStyle>
+			<color>ff7f00aa</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<color>ff7fff00</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff55ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<color>ff7fff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff55ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_police">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_police</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_police</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_police">
+		<IconStyle>
+			<color>ff7f00aa</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>foss4g</name>
+		<open>1</open>
+		<Placemark>
+			<name>tokyo_station</name>
+			<description><![CDATA[東京駅<img src="http://hwakui.github.io/foss4g_2015/IMG_0878.JPG"/>]]></description>
+			<LookAt>
+				<longitude>139.7676089564182</longitude>
+				<latitude>35.68060024040373</latitude>
+				<altitude>0</altitude>
+				<heading>0.1121667942989851</heading>
+				<tilt>31.31084434571091</tilt>
+				<range>659.8081907226523</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>139.7676089564182,35.68060024040373,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>way</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					139.7675868312406,35.68142794394393,0 139.767165035914,35.68107710453719,0 139.7663233819137,35.68031082009561,0 139.7652413138427,35.67947945356937,0 139.7642400196435,35.67844552018176,0 139.7636569723525,35.67775994667107,0 139.7632411160079,35.67721465683407,0 139.7625070360361,35.67667191631081,0 139.7622609670352,35.67640110589851,0 139.7620139596006,35.6760633280319,0 139.7613671590968,35.67559404213039,0 139.7611234542566,35.67532592305469,0 139.7604789453977,35.67479215317591,0 139.7591998008053,35.67392890442608,0 139.7562753943079,35.67163105540385,0 139.7556503659757,35.67111129468636,0 139.7548721044746,35.67059383890248,0 139.7537125352351,35.66969328477726,0 139.7529423178543,35.66924579742917,0 139.7527136208797,35.66899059338485,0 139.7524864002665,35.66867226845739,0 139.7521955323786,35.6675952677698,0 139.7519749537592,35.667028887704,0 139.751904967803,35.66665276543871,0 139.7516903689688,35.66584186292813,0 139.751543612176,35.66553153316393,0 139.7514735016186,35.66522179870976,0 139.7514086043805,35.66466609180063,0 139.7511882830978,35.66429745014208,0 139.7509672734263,35.66399119712537,0 139.750819778172,35.66380786105108,0 139.7505225255681,35.66356410052436,0 139.7501487124557,35.66338199692211,0 139.7497000594764,35.66320035087315,0 139.7494734314319,35.66320091905337,0 139.7490220599174,35.66314119992838,0 139.7488781752196,35.66308013381146,0 139.7485938126424,35.66289763817576,0 139.7485311862891,35.66265534756027,0 139.7482573385044,35.66199306239059,0 139.7480406131963,35.66145339757036,0 139.7479029585219,35.66109496170402,0 139.7477638054499,35.6607971401582,0 139.7474187329376,35.66002618212576,0 139.7472124415817,35.65961348954635,0 139.7469255979657,35.65943838727079,0 139.7467103479422,35.65932202686447,0 139.7463450727237,35.65932447912262,0 139.7459774710745,35.65932628406658,0 139.7458970561047,35.65950320269153,0 139.7458170643886,35.65968044098565,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>tokyo_tower</name>
+			<LookAt>
+				<longitude>139.7456439059921</longitude>
+				<latitude>35.65833075293126</latitude>
+				<altitude>0</altitude>
+				<heading>0.09190234994132883</heading>
+				<tilt>29.31159241178084</tilt>
+				<range>605.1463918006471</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_police</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>139.7456439059921,35.65833075293126,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
